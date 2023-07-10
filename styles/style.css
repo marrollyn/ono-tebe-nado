@@ -86,7 +86,6 @@
 .cover__title {
   font-weight: 700;
   font-size: 100px;
-  letter-spacing: 30px;
   display: flex;
   flex-direction: column;
   padding-top: 164px;
@@ -107,7 +106,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: center;
 }
 
 .title__word-third {
@@ -238,6 +236,7 @@
 
 .about__logo {
   max-width: 148px;
+  width: 100%;
   margin: 0 auto;
   position: absolute;
   inset: 25% 0% 25% 0%;
@@ -259,8 +258,8 @@
   position: relative;
   background-color: black;
   border-radius: 50%;
-  max-height: 240px;
-  max-width: 240px;
+  height: 240px;
+  width: 240px;
   margin: 0px 95px 0px 95px;
 }
 
