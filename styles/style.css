@@ -70,17 +70,18 @@
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 181px;
+  position: relative;
+  inset: 0;
+  z-index: -1;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
   z-index: 0;
-}
-
-.overlay__cover {
-  min-height: 757px;
 }
 
 .cover__title {
@@ -92,6 +93,9 @@
   letter-spacing: 25px;
   line-height: 1.23;
   margin-bottom: 1.24em;
+  position: relative;
+  inset: 0;
+  z-index: 1;
 }
 
 .title__word-first {
@@ -122,11 +126,15 @@
 .no-letter-spacing {
   margin-right: 0.11em;
 }
+
 .cover__description {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 4rem;
+  position: relative;
+  inset: 0;
+  z-index: 1;
 }
 
 .description-title {
@@ -168,9 +176,10 @@
 .lots__card-list {
   display: flex;
   justify-content: space-between;
-  margin: 27px 25px 30px 25px;
+  margin: 27px 25px 31px 25px;
   gap: 1.5em;
 }
+
 .lots__card-list-item {
   list-style-type: none;
   flex-grow: 1;
@@ -187,10 +196,9 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
-}
-
-.overlay__card {
-  min-height: 450px;
+  position: relative;
+  inset: 0;
+  z-index: -1;
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
@@ -214,10 +222,16 @@
   padding: 50px 40px 0px 40px;
   letter-spacing: 1.3px;
   line-height: 1.3em;
+  position: relative;
+  inset: 0;
+  z-index: 1;
 }
 
 .card__text {
   padding: 0px 40px 50px 40px;
+  position: relative;
+  inset: 0;
+  z-index: 1;
 }
 
 .lots__look-more-link {
@@ -244,14 +258,9 @@
 
 .about__column-article {
   margin-left: 10px;
-}
-
-.about__title {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 100px;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about__column-logo {
@@ -263,12 +272,17 @@
   margin: 0px 95px 0px 95px;
 }
 
-.about__text {
-  font-size: 20px;
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: 71px;
 }
 
-.text-padding-bottom {
-  padding-bottom: 25px;
+.about__text {
+  font-size: 20px;
+  padding-top: 25px;
 }
 /*end about*/
 /*end main*/
